@@ -1,3 +1,4 @@
+##################### 1 #####################################
 Buatkan issue.md berisi planning untuk membuat ini:
 
 Buat projek di folder ini menggunakan Bun dan gunakan dependency:
@@ -6,4 +7,35 @@ Buat projek di folder ini menggunakan Bun dan gunakan dependency:
 - Mysql
 
 Jangan terlalu low level atau detail, cukup instruksikan secara high level.
-Nanti dokumen planning nya akan digunakan oleh programmer atau model yang lebih murah untuk diimplementasikan
+Nanti dokumen planning nya akan digunakan oleh programmer atau model yang 
+lebih murah untuk diimplementasikan
+##################### 1 #####################################
+
+##################### 2 #####################################
+Buatkan issue.md yang berisi perencanaan untuk nanti di implementasikan
+oleh junior programmer atau ai model yang lebih murah.
+
+Berikut adalah design db yang harus digunakan:
+
+edit tabel users:
+id integer auto increment
+name varchar 255 not null
+email varchar 255 not null
+password varchar 255 not null (password merupakan hash dari bcrypt)
+created at timestamp default current_timestamp
+updated at timestamp default current_timestamp
+
+Buat endpoint:
+- POST /auth/register
+- POST /auth/login
+- POST /auth/logout
+
+buatkan juga standarisasi response dan request yang baik, sesuai best practice.
+untuk auth/register dan auth/login gunakan JWT. dan buatkan dokumentasi apinya 
+menggunakan best practice swagger UI.
+
+Dokumen nya harus rapi, jangan terlalu low level atau detail,
+lebih ke high level planning agar bisa di implementasikan oleh
+junior programmer atau ai model yang lebih murah.
+Serta jelaskan tahapan-tahapan yang harus dilakukan untuk implementasi.
+##################### 2 #####################################
